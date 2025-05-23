@@ -11,6 +11,6 @@ public class TipoRestaurante {
     private Long id;
     @Column(unique = true)
     private String nome;
-    private String descricacao;
+    private String descricao;
     private String palavraChave;
 }
