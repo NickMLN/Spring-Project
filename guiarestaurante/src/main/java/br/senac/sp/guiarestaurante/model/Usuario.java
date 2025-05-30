@@ -1,5 +1,6 @@
 package br.senac.sp.guiarestaurante.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -12,5 +13,6 @@ public class Usuario {
     private String nome;
     @Column(unique = true)
     private  String email;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String senha;
 }
